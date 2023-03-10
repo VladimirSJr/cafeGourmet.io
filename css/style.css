@@ -106,9 +106,10 @@ section{
     height: auto;
 }
 .contact .contact-content .person{
-    width: calc(15% - 10px);
+    width: calc(16% - 10px);
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border: solid .2rem #201203;
     flex-direction: column;
