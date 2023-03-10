@@ -7,44 +7,48 @@
 		<title>Café Gourmet</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/cabe_roda.css">
-		<script src="javascript/script.js"></script>
+		<link rel="stylesheet" href="css/dataAnime.css">
 		<link rel="shortcut icon" href="Images/coffee_logo.png" type="image/x-icon">
 	</head>
 	<body>
-		<header>
+		<div class="scroll-up-btn">
+            <ion-icon name="chevron-up-outline"></ion-icon>
+        </div>
+		<header class="navbar">
 			<a href="#"><img src="Images/coffee_logo.png" alt="Logo"></a>
-			<nav>
-				<ul id="#nav_links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="producao.html">Produção</a></li>
-					<li><a href="industrializacao.html">Insdustrialização</a></li>
-					<li><a href="valor.html">Cadeia global de valor</a></li>
+			<nav id="nav-menu">
+				<ul id="menu" role="menu">
+					<li><a id="link" href="index.html">Home</a></li>
+					<li><a id="link" href="producao.html">Produção</a></li>
+					<li><a id="link" href="industrializacao.html">Insdustrialização</a></li>
+					<li><a id="link" href="valor.html">Cadeia global de valor</a></li>
 				</ul>
+				<button id="menu-btn" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span></button>
 			</nav>
 		</header>
 		<section class="landing-page">
-			<div class="landing-title">
-				<h1>Café <span>Gourmet</span></h1>
+			<div class="landing-title" data-anime="left">
+				<h1>Café <span class="typing"></span></h1>
 				<p>Gourmetização do café: competitividade às empresas brasileiras em uma cadeia global de valor</p>
 			</div>
-			<div class="coffeeCup">
+			<div class="coffeeCup" data-anime="right">
 				<img src="Images/coffee_cup.png" alt="Coffee Cup">
 			</div>
 		</section>
 		<section class="about">
-			<div class="about-title">
+			<div class="about-title" data-anime="left">
 				<h1>Sobre</h1>
 			</div>
-			<div class="about-content">
+			<div class="about-content" data-anime="right">
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 			</div>
 		</section>
 		<section class="contact" id="contact">
 			<div class="max-contact">
-				<div class="contact-title">
+				<div class="contact-title" data-anime="top">
 					<h1>Contato</h1>
 				</div>
-				<div class="contact-content">
+				<div class="contact-content" data-anime="bottom">
 					<div class="person">
 						<div class="picture">
 							<img src="Images/flávio.jpeg" alt="Flávio">
@@ -97,5 +101,13 @@
 		<footer>
 			<p>Site criado por <a href="#contact">Vladimir Junior.</a></p>
 		</footer>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+		<script src="javascript/animeScroll.js"></script>
+		<script src="javascript/script.js"></script>
+		<script src="javascript/menu.js"></script>
 	</body>
 </html>

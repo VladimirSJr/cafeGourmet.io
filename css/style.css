@@ -42,10 +42,11 @@ section{
     height: 20rem;
 }
 
-.about{
+.about, .contact .max-contact .contact-content{
     background-color: #9A5328;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .about-title{
     padding: 1rem;
@@ -60,7 +61,7 @@ section{
 }
 .about-content{
     padding: 1rem;
-    width: 70%;
+    width: 60%;
 }
 .about-content p{
     font-family: 'Ubuntu', sans-serif;
@@ -74,6 +75,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 6.2rem;
 }
 .max-contact{
     width: 100%;
@@ -91,17 +93,26 @@ section{
 }
 .contact-content{
     display: flex;
-    margin: 0 10rem;
-    padding: 2rem;
-    justify-content: space-around;
+    padding: 1rem;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.2);
+    height: 17rem;
 }
-.contact .person{
+.contact-content.active{
+    height: auto;
+}
+.contact .contact-content .person{
+    width: calc(15% - 10px);
     display: flex;
+    justify-content: center;
     align-items: center;
+    border: solid .2rem #201203;
     flex-direction: column;
-    width: 5rem;
+    padding: 1rem;
 }
 .picture img{
     border-radius: 10rem;
@@ -113,7 +124,43 @@ section{
     font-size: 1rem;
     text-align: center;
 }
+.social-media{
+    display: flex;
+    flex-direction: row;
+}
 .social-media img{
     max-width: 2rem;
     cursor: pointer;
+}
+
+@media (max-width:1160px){
+    .landing-page .landing-title h1{
+        font-size: 5rem;
+    }
+    .landing-page .landing-title h1 span{
+        font-size: 7rem;
+    }
+    .landing-page .landing-title p{
+        font-family: 'Ubuntu', sans-serif;
+        color: #D4C5B9;
+        font-size: 1rem;
+    }
+    .landing-page .coffeeCup{
+        padding: 2rem;
+        border-radius: 60% 20% 60% 20%;
+    }
+    .landing-page .coffeeCup img{
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width:1050px){
+    .landing-page .coffeeCup img{
+        display: none;
+    }
+    .landing-page .coffeeCup{
+        padding: 0;
+        border-radius: none;
+    }
 }
