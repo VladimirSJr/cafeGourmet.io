@@ -34,6 +34,7 @@ nav li{
 nav a{
     color: #D4C5B9;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     margin-left: 1.5rem;
     border-radius: 0.5rem;
     transition: color .3s ease;
@@ -45,7 +46,7 @@ nav a:hover{
 }
 .navbar.sticky{
     background-color: #201203;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
 }
 
 #logo{
@@ -155,7 +156,7 @@ footer p a:hover{
     #nav-menu.active #menu{
         visibility: visible;
         overflow-y: auto;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 1.2rem);
     }
     #nav-menu #menu li{
         display: block;
